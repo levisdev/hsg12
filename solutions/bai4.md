@@ -1,4 +1,4 @@
-#### Viết công thức truy hồi của các hàm sau và lập trình để thực hiện các hàm này bằng đệ quy.
+## Viết công thức truy hồi của các hàm sau và lập trình để thực hiện các hàm này bằng đệ quy.
 
 1. Hàm factorial(n) = n! (tính n giai thừa).
 
@@ -70,7 +70,7 @@ def Sodd(n):
 print(Sodd(20))
 ```
 
-#### Dãy số Fibonacci
+## Dãy số Fibonacci
 
 Viết hàm đệ quy tính số Fibonacci thứ n.
 
@@ -83,7 +83,7 @@ def Fibonacci(n):
 print(Fibonacci(5))
 ```
 
-#### Dãy số Lucas.
+## Dãy số Lucas.
 
 Viết hàm đệ quy tính số Lucas thứ n.
 
@@ -98,7 +98,7 @@ def Lucas(n):
 print(Lucas(5))
 ```
 
-#### Dãy số Pell.
+## Dãy số Pell.
 
 Viết hàm đệ quy tính số Pell thứ n.
 
