@@ -11,10 +11,14 @@ def factorial(n):
 print(factorial(5))
 ```
 
-2. Hàm exp(a,n) = an (lũy thừa).
+2. Hàm exp(a,n) = a^n (lũy thừa).
 
 ```python
 def exp(a, n):
+    if a == 0:
+        return 0
+    if n == 0:
+        return 1
     if n == 1:
         return a
     return exp(a, n-1) * a
@@ -110,3 +114,39 @@ def Pell(n):
 
 print(Pell(5))
 ```
+
+## Dãy số Pandovan.
+
+Viết hàm đệ quy tính số Pandovan thứ n.
+
+```python
+def Pandovan(n):
+    if (n == 0 or n == 1 or n == 2):
+        return 1
+    return Pandovan(n-2) + Pandovan(n-3)
+
+print(Pandovan(5))
+```
+
+## Viết hàm tính tổng sau bằng kỹ thuật đệ quy.
+
+$$ S = \frac {1} {0!} + \frac {1} {1!} + \frac {1} {2!} + ... + \frac {1} {n!} $$
+
+```python
+n = 5
+
+def fact(n):
+    if n <= 1:
+        return 1
+    return fact(n-1) * n
+
+res = 0
+for i in range(n+1):
+    res += 1 / fact(i)
+
+print(res)
+```
+
+## Viết hàm tính tổng sau đây bằng kỹ thuật đệ quy.
+
+$$ S(x) = \frac {x^0} {0!} + \frac {x^1} {1!} + \frac {x^2} {2!} + ... + \frac {x^n} {n!}$$
